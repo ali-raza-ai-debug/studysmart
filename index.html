@@ -136,13 +136,13 @@
   .float-wa{position:fixed;left:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:#fff;box-shadow:0 8px 24px rgba(0,0,0,.35)}
   .float-wa svg{width:30px;height:30px}
 
-  /* n8n chat widget in brand colours */
-  :root{
+  /* n8n chat widget in brand colours (html:root beats the widget's own :root defaults) */
+  html:root{
     --chat--color-primary:#D4A437; --chat--color-primary-shade-50:#C8952B; --chat--color-primary-shade-100:#B8862A;
     --chat--color-secondary:#0F1E3D; --chat--color-secondary-shade-50:#0A1530;
     --chat--header--background:#0F1E3D; --chat--header--color:#FFFFFF;
     --chat--toggle--background:#D4A437; --chat--toggle--hover--background:#F3D27A; --chat--toggle--active--background:#C8952B; --chat--toggle--color:#0A1530;
-    --chat--message--bot--background:#FFFFFF; --chat--message--user--background:#0F1E3D; --chat--message--user--color:#FFFFFF;
+    --chat--message--bot--background:#FFFFFF; --chat--message--user--background:#0F1E3D; --chat--message--user--color:#FFFFFF; --chat--message--bot--color:#0F1E3D; --chat--color-light:#F7F4EC; --chat--color-white:#FFFFFF; --chat--color-dark:#0A1530;
   }
 </style>
 </head>
